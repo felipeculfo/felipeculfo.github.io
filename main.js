@@ -143,51 +143,106 @@ class ChecklistData {
                     }
                 ]
             },
+            merchants: {
+                title: "Popioły i Zwoje Handlarzy",
+                groups: [
+                    {
+                        name: "Shrine Handmaiden – Popioły (Ashes)",
+                        items: [
+                            { id: "ash_1", name: "Mortician's Ashes", desc: "Undead Settlement: Przy ciele na cmentarzu, gdzie olbrzym rzuca włóczniami." },
+                            { id: "ash_2", name: "Dreamchaser's Ashes", desc: "Farron Keep: Za iluzoryczną ścianą przy drabinie prowadzącej do Starego Wilka z Farron (Wymagane do questu Sirris!)." },
+                            { id: "ash_3", name: "Paladin's Ashes", desc: "Cathedral of the Deep: Przy ścieżce na lewo od pierwszego ogniska Katedry." },
+                            { id: "ash_4", name: "Grave Warden's Ashes", desc: "Catacombs of Carthus: W katakumbach na półce skalnej przed toczącą się kulą kości." },
+                            { id: "ash_5", name: "Easterner's Ashes", desc: "Irithyll / Anor Londo: Na dachu, gdzie stacjonują łucznicy Srebrnych Rycerzy." },
+                            { id: "ash_6", name: "Xanthous Ashes", desc: "Irithyll Dungeon: W celi pełnej strażników (Jailers) na samym dole." },
+                            { id: "ash_7", name: "Prisoner Chief's Ashes", desc: "Irithyll Dungeon: W celi otwieranej za pomocą Jailer's Keyring." },
+                            { id: "ash_8", name: "Dragonchaser's Ashes", desc: "Archdragon Peak: Na ścieżce po lewej stronie przed punktem przyzwania do walki z Nameless Kingiem." }
+                        ]
+                    },
+                    {
+                        name: "Orbeck z Vinheim – Zwoje Magii (Scrolls)",
+                        items: [
+                            { id: "scr_1", name: "Sage's Scroll", desc: "Farron Keep: Przy ciele wśród zatrutych grzybów na lewo od ogniska Keep Ruins." },
+                            { id: "scr_2", name: "Golden Scroll", desc: "Farron Keep: W jaskini strzeżonej przez Basiliski w zalanej części bagna." },
+                            { id: "scr_3", name: "Logan's Scroll", desc: "Profaned Capital: Upuszczany przez maga NPC na dachu budynku w bagnie z toksynami." },
+                            { id: "scr_4", name: "Crystal Scroll", desc: "Grand Archives: Upuszczany przez Crystal Sage pojawiającego się wewnątrz biblioteki." }
+                        ]
+                    },
+                    {
+                        name: "Irina / Karla – Tomy Cudów (Braille Tomes)",
+                        items: [
+                            { id: "tome_m_1", name: "Braille Divine Tome of Carim", desc: "Road of Sacrifices: Pod mostem z psami przed ogniskiem Halfway Fortress (Oddaj Irinie)." },
+                            { id: "tome_m_2", name: "Braille Divine Tome of Lothric", desc: "Lothric Castle: Wskocz przez dziurę w murze w uszkodzonej korytarzowej sali przed bossem Dragonslayer Armour (Oddaj Irinie)." },
+                            { id: "tome_m_3", name: "Deep Braille Divine Tome", desc: "Cathedral of the Deep: Upuszczany przez Mimica w katedrze (Mroczny Tom - Oddaj Karli!)." },
+                            { id: "tome_m_4", name: "Londor Braille Divine Tome", desc: "Kup u Yurii z Londor w Firelink Shrine za 1,500 dusz (Mroczny Tom - Oddaj Karli!)." }
+                        ]
+                    },
+                    {
+                        name: "Cornyx / Karla – Tomy Piromancji (Pyromancy Tomes)",
+                        items: [
+                            { id: "tome_p_1", name: "Great Swamp Pyromancy Tome", desc: "Road of Sacrifices: W wodzie obok wielkiego kraba (Oddaj Cornyxowi)." },
+                            { id: "tome_p_2", name: "Carthus Pyromancy Tome", desc: "Catacombs of Carthus: Za iluzoryczną ścianą w korytarzu z wazami (Oddaj Cornyxowi)." },
+                            { id: "tome_p_3", name: "Izalith Pyromancy Tome", desc: "Smouldering Lake: Przysypany przy ognisku Old King's Antechamber (Oddaj Cornyxowi)." },
+                            { id: "tome_p_4", name: "Quelana Pyromancy Tome", desc: "Smouldering Lake: Za iluzoryczną ścianą w korytarzu z ruinami (Oddaj Karli - Cornyx odmówi)." },
+                            { id: "tome_p_5", name: "Grave Warden Pyromancy Tome", desc: "Catacombs of Carthus: Podczas walki z High Lord Wolnirem przy ciele w mroku lub zwiń przed walką (Oddaj Karli)." }
+                        ]
+                    }
+                ]
+            },
             sorceries: {
                 title: "Czary (34)",
                 groups: [
                     {
-                        name: "Sprzedawane przez Orbecka z Vinheim",
+                        name: "Zakup u Handlarzy",
                         items: [
-                            { id: "s_1", name: "Soul Arrow", desc: "Kup u Orbecka / Melkinty." },
-                            { id: "s_2", name: "Great Soul Arrow", desc: "Kup u Orbecka." },
-                            { id: "s_3", name: "Heavy Soul Arrow", desc: "Kup u Orbecka." },
-                            { id: "s_4", name: "Great Heavy Soul Arrow", desc: "Kup u Orbecka." },
-                            { id: "s_5", name: "Farron Dart", desc: "Kup u Orbecka." },
-                            { id: "s_6", name: "Greater Farron Dart", desc: "Kup u Orbecka po przekazaniu Sage's Scroll." },
-                            { id: "s_7", name: "Farron Flashsword", desc: "Kup u Orbecka." },
-                            { id: "s_8", name: "Homing Soulmass", desc: "Kup u Orbecka po przekazaniu Logan's Scroll." },
-                            { id: "s_9", name: "Homing Crystal Soulmass", desc: "Kup u Orbecka po przekazaniu Crystal Scroll." },
-                            { id: "s_10", name: "Soul Spear", desc: "Kup u Orbecka po przekazaniu Logan's Scroll." },
-                            { id: "s_11", name: "Crystal Soul Spear", desc: "Kup u Orbecka po przekazaniu Crystal Scroll." },
-                            { id: "s_12", name: "Magic Weapon", desc: "Kup u Orbecka." },
-                            { id: "s_13", name: "Great Magic Weapon", desc: "Kup u Orbecka po przekazaniu Farron Scroll." },
-                            { id: "s_14", name: "Crystal Magic Weapon", desc: "Kup u Orbecka po przekazaniu Crystal Scroll." },
-                            { id: "s_15", name: "Magic Shield", desc: "Kup u Orbecka." },
-                            { id: "s_16", name: "Great Magic Shield", desc: "Kup u Orbecka." },
-                            { id: "s_17", name: "Spook", desc: "Kup u Orbecka." },
-                            { id: "s_18", name: "Aural Decoy", desc: "Kup u Orbecka." },
-                            { id: "s_19", name: "Pestilent Mist", desc: "Kup u Orbecka po przekazaniu dowolnego zwoju." },
-                            { id: "s_20", name: "Hidden Weapon", desc: "Kup u Orbecka po przekazaniu Farron Scroll." },
-                            { id: "s_21", name: "Hidden Body", desc: "Kup u Orbecka po przekazaniu Farron Scroll." },
-                            { id: "s_22", name: "Cast Light", desc: "Kup u Orbecka po przekazaniu Golden Scroll." },
-                            { id: "s_23", name: "Repair", desc: "Kup u Orbecka po przekazaniu Golden Scroll." },
-                            { id: "s_24", name: "Chameleon", desc: "Kup u Orbecka po przekazaniu Golden Scroll." }
+                            { id: "s_1", name: "Soul Arrow", desc: "Zakup: Orbeck z Vinheim / Yoel z Londor / Shrine Handmaiden." },
+                            { id: "s_2", name: "Great Soul Arrow", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_3", name: "Heavy Soul Arrow", desc: "Zakup: Orbeck z Vinheim / Yoel z Londor." },
+                            { id: "s_4", name: "Great Heavy Soul Arrow", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_5", name: "Farron Dart", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_6", name: "Greater Farron Dart", desc: "Zakup: Orbeck z Vinheim (Wymaga: Sage's Scroll)." },
+                            { id: "s_7", name: "Farron Flashsword", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_8", name: "Homing Soulmass", desc: "Zakup: Orbeck z Vinheim (Wymaga: Logan's Scroll)." },
+                            { id: "s_9", name: "Homing Crystal Soulmass", desc: "Zakup: Orbeck z Vinheim (Wymaga: Crystal Scroll)." },
+                            { id: "s_10", name: "Soul Spear", desc: "Zakup: Orbeck z Vinheim (Wymaga: Logan's Scroll)." },
+                            { id: "s_11", name: "Crystal Soul Spear", desc: "Zakup: Orbeck z Vinheim (Wymaga: Crystal Scroll)." },
+                            { id: "s_12", name: "Magic Weapon", desc: "Zakup: Yoel z Londor / Orbeck z Vinheim." },
+                            { id: "s_13", name: "Great Magic Weapon", desc: "Zakup: Orbeck z Vinheim (Wymaga: Farron Scroll)." },
+                            { id: "s_14", name: "Crystal Magic Weapon", desc: "Zakup: Orbeck z Vinheim (Wymaga: Crystal Scroll)." },
+                            { id: "s_15", name: "Magic Shield", desc: "Zakup: Yoel z Londor / Orbeck z Vinheim." },
+                            { id: "s_16", name: "Great Magic Shield", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_17", name: "Spook", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_18", name: "Aural Decoy", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_19", name: "Pestilent Mist", desc: "Zakup: Orbeck z Vinheim (Po przekazaniu dowolnego zwoju)." },
+                            { id: "s_20", name: "Hidden Weapon", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
+                            { id: "s_21", name: "Hidden Body", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
+                            { id: "s_22", name: "Cast Light", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
+                            { id: "s_23", name: "Repair", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
+                            { id: "s_24", name: "Chameleon", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
+                            { id: "s_27", name: "Twisted Wall of Light", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
+                            { id: "s_30", name: "Affinity", desc: "Zakup: Karla." },
+                            { id: "s_31", name: "Dark Edge", desc: "Zakup: Karla." }
                         ]
                     },
                     {
-                        name: "Znajdźki, Dusz Bossów i Karli",
+                        name: "Znajdźki w Świecie Gry",
                         items: [
-                            { id: "s_25", name: "Soul Stream", desc: "Grand Archives: W ukrytej komnacie za iluzoryczną ścianą." },
-                            { id: "s_26", name: "Flash Sword", desc: "Road of Sacrifices: W wodzie przy ustronnym miejscu." },
-                            { id: "s_27", name: "Twisted Wall of Light", desc: "Kup u Orbecka po przekazaniu Golden Scroll." },
-                            { id: "s_28", name: "Deep Soul", desc: "Transmutacja Duszy Deacons of the Deep u Ludletha." },
-                            { id: "s_29", name: "Great Deep Soul", desc: "Nagroda za 1. rangę w przymierzu Aldrich Faithful (10 Human Dregs)." },
-                            { id: "s_30", name: "Affinity", desc: "Kup u Karli." },
-                            { id: "s_31", name: "Dark Edge", desc: "Kup u Karli." },
-                            { id: "s_32", name: "Great Soul Beacon", desc: "Profaned Capital: Ciało w bagnie z toksynami." },
-                            { id: "s_33", name: "Soul Geyser", desc: "Lothric Castle: Skrzynia przed bossem Dragonslayer Armour." },
-                            { id: "s_34", name: "White Dragon Breath", desc: "Transmutacja Duszy Oceirosa u Ludletha." }
+                            { id: "s_25", name: "Soul Stream", desc: "Loot: Grand Archives – w ukrytej komnacie za iluzoryczną ścianą na samym końcu." },
+                            { id: "s_26", name: "Great Farron Dart / Flash Sword", desc: "Loot: Road of Sacrifices – przy ciele w zalanej ruinie." },
+                            { id: "s_32", name: "Great Deep Soul / Soul Beacon", desc: "Loot: Profaned Capital – przy ciele na bagnie z toksynami." }
+                        ]
+                    },
+                    {
+                        name: "Nagrody za Przymierza (Covenants)",
+                        items: [
+                            { id: "s_29", name: "Great Deep Soul", desc: "Nagroda: Ranga 1 w Aldrich Faithful (Wymagane: 10 Human Dregs)." }
+                        ]
+                    },
+                    {
+                        name: "Transmutacja Dusz Bossów (Ludleth)",
+                        items: [
+                            { id: "s_28", name: "Deep Soul", desc: "Transmutacja: Soul of the Deacons of the Deep u Ludletha." },
+                            { id: "s_34", name: "White Dragon Breath", desc: "Transmutacja: Soul of Consumed Oceiros u Ludletha." }
                         ]
                     }
                 ]
@@ -196,43 +251,58 @@ class ChecklistData {
                 title: "Cuda (35)",
                 groups: [
                     {
-                        name: "Sprzedawane przez Irinę / Karlę",
+                        name: "Zakup u Handlarzy",
                         items: [
-                            { id: "m_1", name: "Heal Aid", desc: "Kup u Iriny z Carim." },
-                            { id: "m_2", name: "Heal", desc: "Kup u Iriny." },
-                            { id: "m_3", name: "Med Heal", desc: "Kup u Iriny po przekazaniu Braille Divine Tome of Carim." },
-                            { id: "m_4", name: "Great Heal", desc: "Irithyll of the Boreal Valley: W wodzie pod mostem z pająkami." },
-                            { id: "m_5", name: "Soothing Sunlight", desc: "Transmutacja Duszy Dancera u Ludletha." },
-                            { id: "m_6", name: "Replenishment", desc: "Kup u Iriny." },
-                            { id: "m_7", name: "Bountiful Light", desc: "Kup u Iriny po przekazaniu Braille Divine Tome of Lothric." },
-                            { id: "m_8", name: "Bountiful Sunlight", desc: "Transmutacja Duszy Rosarii u Ludletha." },
-                            { id: "m_9", name: "Caressing Tears", desc: "Kup u Iriny." },
-                            { id: "m_10", name: "Tears of Denial", desc: "Kup u Iriny po przekazaniu Braille Divine Tome of Carim." },
-                            { id: "m_11", name: "Homeward", desc: "Kup u Iriny." },
-                            { id: "m_12", name: "Force", desc: "Kup u Iriny po przekazaniu Braille Divine Tome of Carim." },
-                            { id: "m_13", name: "Wrath of the Gods", desc: "Profaned Capital: Na dachu budynku w bagnie toksyn." },
-                            { id: "m_14", name: "Emit Force", desc: "Nagroda od Siegwarda po rozmowie w kuchni w Irithyll." },
-                            { id: "m_15", name: "Seek Guidance", desc: "Cathedral of the Deep: Przy ciele na dachu." },
-                            { id: "m_16", name: "Sacred Oath", desc: "Nagroda za 1. rangę w przymierzu Warriors of Sunlight (10 Sunlight Medals)." },
-                            { id: "m_17", name: "Magic Barrier", desc: "Kup u Iriny po przekazaniu Braille Divine Tome of Lothric." },
-                            { id: "m_18", name: "Great Magic Barrier", desc: "Archdragon Peak: Za chowanym przejście przy ruinach." },
-                            { id: "m_19", name: "Lightning Blade", desc: "Irithyll Dungeon: Przy windzie łączącej dungeony." },
-                            { id: "m_20", name: "Darkmoon Blade", desc: "Nagroda za 2. rangę w przymierzu Blades of the Darkmoon (30 Proof of a Concord Kept)." },
-                            { id: "m_21", name: "Blessed Weapon", desc: "Kup u Iriny po przekazaniu Braille Divine Tome of Lothric." },
-                            { id: "m_22", name: "Lightning Spear", desc: "Farron Keep: Przy martwym demonie na szczycie." },
-                            { id: "m_23", name: "Great Lightning Spear", desc: "Nagroda za 2. rangę w przymierzu Warriors of Sunlight (30 Sunlight Medals)." },
-                            { id: "m_24", name: "Sunlight Spear", desc: "Transmutacja Duszy Soul of Cinder u Ludletha." },
-                            { id: "m_25", name: "Lightning Stake", desc: "Smouldering Lake: Upuszczany przez wyłaniającego się Robaka (Carthus Worm)." },
-                            { id: "m_26", name: "Lightning Storm", desc: "Transmutacja Duszy Nameless Kinga u Ludletha." },
-                            { id: "m_27", name: "Divine Pillars of Light", desc: "Grand Archives: Na samej górze w klatce." },
-                            { id: "m_28", name: "Atonement", desc: "Farron Keep: W trtrujacej jaskini." },
-                            { id: "m_29", name: "Deep Protection", desc: "Kup u Karli po przekazaniu Deep Braille Divine Tome." },
-                            { id: "m_30", name: "Gnaw", desc: "Kup u Karli po przekazaniu Deep Braille Divine Tome." },
-                            { id: "m_31", name: "Dorrhy's Gnaw", desc: "Irithyll: Zbij grubą ewangelistkę za iluzoryczną ścianą." },
-                            { id: "m_32", name: "Lifehunt Scythe", desc: "Transmutacja Duszy Aldricha u Ludletha." },
-                            { id: "m_33", name: "Dead Again", desc: "Kup u Karli po przekazaniu Londor Braille Divine Tome." },
-                            { id: "m_34", name: "Dark Blade", desc: "Kup u Karli po przekazaniu Londor Braille Divine Tome." },
-                            { id: "m_35", name: "Vow of Silence", desc: "Kup u Karli po przekazaniu Londor Braille Divine Tome." }
+                            { id: "m_1", name: "Heal Aid", desc: "Zakup: Irina z Carim." },
+                            { id: "m_2", name: "Heal", desc: "Zakup: Irina z Carim." },
+                            { id: "m_3", name: "Med Heal", desc: "Zakup: Irina z Carim (Wymaga: Braille Divine Tome of Carim)." },
+                            { id: "m_6", name: "Replenishment", desc: "Zakup: Irina z Carim." },
+                            { id: "m_7", name: "Bountiful Light", desc: "Zakup: Irina z Carim (Wymaga: Braille Divine Tome of Lothric)." },
+                            { id: "m_9", name: "Caressing Tears", desc: "Zakup: Irina z Carim." },
+                            { id: "m_10", name: "Tears of Denial", desc: "Zakup: Irina z Carim (Wymaga: Braille Divine Tome of Carim)." },
+                            { id: "m_11", name: "Homeward", desc: "Zakup: Irina z Carim." },
+                            { id: "m_12", name: "Force", desc: "Zakup: Irina z Carim (Wymaga: Braille Divine Tome of Carim)." },
+                            { id: "m_17", name: "Magic Barrier", desc: "Zakup: Irina z Carim (Wymaga: Braille Divine Tome of Lothric)." },
+                            { id: "m_21", name: "Blessed Weapon", desc: "Zakup: Irina z Carim (Wymaga: Braille Divine Tome of Lothric)." },
+                            { id: "m_29", name: "Deep Protection", desc: "Zakup: Karla (Wymaga: Deep Braille Divine Tome)." },
+                            { id: "m_30", name: "Gnaw", desc: "Zakup: Karla (Wymaga: Deep Braille Divine Tome)." },
+                            { id: "m_33", name: "Dead Again", desc: "Zakup: Karla (Wymaga: Londor Braille Divine Tome)." },
+                            { id: "m_34", name: "Dark Blade", desc: "Zakup: Karla (Wymaga: Londor Braille Divine Tome)." },
+                            { id: "m_35", name: "Vow of Silence", desc: "Zakup: Karla (Wymaga: Londor Braille Divine Tome)." }
+                        ]
+                    },
+                    {
+                        name: "Znajdźki w Świecie Gry / Questy",
+                        items: [
+                            { id: "m_4", name: "Great Heal", desc: "Loot: Irithyll of the Boreal Valley – w zalanej dolinie pod mostem z pająkami." },
+                            { id: "m_13", name: "Wrath of the Gods", desc: "Loot: Profaned Capital – na dachu budynku na bagnie z toksynami." },
+                            { id: "m_14", name: "Emit Force", desc: "Quest: Nagroda od Siegwarda z Catariny w kuchni w Irithyll." },
+                            { id: "m_15", name: "Seek Guidance", desc: "Loot: Cathedral of the Deep – przy ciele na dachu." },
+                            { id: "m_18", name: "Great Magic Barrier", desc: "Loot: Archdragon Peak – za ukrytym zejściem w ruinach przy wyciągu." },
+                            { id: "m_19", name: "Lightning Blade", desc: "Loot: Irithyll Dungeon – przy windzie stanowiącej skrót." },
+                            { id: "m_22", name: "Lightning Spear", desc: "Loot: Farron Keep – na szczycie przy martwym demonie za windą." },
+                            { id: "m_25", name: "Lightning Stake", desc: "Loot: Smouldering Lake – upuszczany przez wyłaniającego się wielkiego Robaka (Carthus Worm)." },
+                            { id: "m_27", name: "Divine Pillars of Light", desc: "Loot: Grand Archives – na samej górze dachu wewnątrz klatki." },
+                            { id: "m_28", name: "Atonement", desc: "Loot: Farron Keep – w trującej jaskini." },
+                            { id: "m_31", name: "Dorhys' Gnaw", desc: "Loot: Irithyll of the Boreal Valley – upuszczany przez grubą ewangelistkę za iluzoryczną ścianą." }
+                        ]
+                    },
+                    {
+                        name: "Nagrody za Przymierza (Covenants)",
+                        items: [
+                            { id: "m_16", name: "Sacred Oath", desc: "Nagroda: Ranga 1 w Warriors of Sunlight (Wymagane: 10 Sunlight Medals)." },
+                            { id: "m_20", name: "Darkmoon Blade", desc: "Nagroda: Ranga 2 w Blades of the Darkmoon (Wymagane: 30 Proof of a Concord Kept)." },
+                            { id: "m_23", name: "Great Lightning Spear", desc: "Nagroda: Ranga 2 w Warriors of Sunlight (Wymagane: 30 Sunlight Medals)." }
+                        ]
+                    },
+                    {
+                        name: "Transmutacja Dusz Bossów (Ludleth)",
+                        items: [
+                            { id: "m_5", name: "Soothing Sunlight", desc: "Transmutacja: Soul of the Dancer u Ludletha." },
+                            { id: "m_8", name: "Bountiful Sunlight", desc: "Transmutacja: Soul of Rosaria u Ludletha." },
+                            { id: "m_24", name: "Sunlight Spear", desc: "Transmutacja: Soul of the Cinder u Ludletha." },
+                            { id: "m_26", name: "Lightning Storm", desc: "Transmutacja: Soul of Nameless King u Ludletha." },
+                            { id: "m_32", name: "Lifehunt Scythe", desc: "Transmutacja: Soul of Aldrich u Ludletha." }
                         ]
                     }
                 ]
@@ -241,35 +311,50 @@ class ChecklistData {
                 title: "Piromancje (27)",
                 groups: [
                     {
-                        name: "Sprzedawane przez Cornyxa / Karlę",
+                        name: "Zakup u Handlarzy",
                         items: [
-                            { id: "p_1", name: "Fireball", desc: "Kup u Cornyxa." },
-                            { id: "p_2", name: "Fire Orb", desc: "Kup u Cornyxa po przekazaniu Great Swamp Pyromancy Tome." },
-                            { id: "p_3", name: "Bursting Fireball", desc: "Kup u Cornyxa po przekazaniu Great Swamp Pyromancy Tome." },
-                            { id: "p_4", name: "Great Chaos Fire Orb", desc: "Kup u Cornyxa po przekazaniu Izalith Pyromancy Tome." },
-                            { id: "p_5", name: "Chaos Bed Vestiges", desc: "Transmutacja Duszy Old Demon Kinga u Ludletha." },
-                            { id: "p_6", name: "Fire Surge", desc: "Kup u Cornyxa." },
-                            { id: "p_7", name: "Fire Whip", desc: "Kup u Cornyxa po przekazaniu Quelana Pyromancy Tome." },
-                            { id: "p_8", name: "Fire Storm", desc: "Kup u Karli po przekazaniu Quelana Pyromancy Tome." },
-                            { id: "p_9", name: "Chaos Storm", desc: "Kup u Karli po przekazaniu Izalith Pyromancy Tome." },
-                            { id: "p_10", name: "Combustion", desc: "Kup u Cornyxa." },
-                            { id: "p_11", name: "Great Combustion", desc: "Kup u Cornyxa po przekazaniu Great Swamp Pyromancy Tome." },
-                            { id: "p_12", name: "Fire Arc", desc: "Kup u Cornyxa." },
-                            { id: "p_13", name: "Boulder Heave", desc: "Transmutacja Duszy Stray Demona u Ludletha." },
-                            { id: "p_14", name: "Flash Sweat", desc: "Kup u Cornyxa." },
-                            { id: "p_15", name: "Profuse Sweat", desc: "Kup u Cornyxa po przekazaniu Great Swamp Pyromancy Tome." },
-                            { id: "p_16", name: "Iron Flesh", desc: "Farron Keep: W trtrującym bagnie przy ciele." },
-                            { id: "p_17", name: "Power Within", desc: "Grand Archives: Za ukrytą dźwignią w bibliotece." },
-                            { id: "p_18", name: "Carthus Beacon", desc: "Kup u Cornyxa po przekazaniu Carthus Pyromancy Tome." },
-                            { id: "p_19", name: "Carthus Flame Arc", desc: "Kup u Cornyxa po przekazaniu Carthus Pyromancy Tome." },
-                            { id: "p_20", name: "Warmth", desc: "Nagroda za 2. rangę w przymierzu Mound-Makers (30 Vertebra Shackles)." },
-                            { id: "p_21", name: "Poison Mist", desc: "Kup u Cornyxa po przekazaniu Great Swamp Pyromancy Tome." },
-                            { id: "p_22", name: "Toxic Mist", desc: "Smouldering Lake: W lawie pod ruinami." },
-                            { id: "p_23", name: "Acid Surge", desc: "Kup u Cornyxa po przekazaniu Carthus Pyromancy Tome." },
-                            { id: "p_24", name: "Black Flame", desc: "Kup u Karli po przekazaniu Grave Warden Pyromancy Tome." },
-                            { id: "p_25", name: "Black Fire Orb", desc: "Kup u Karli po przekazaniu Grave Warden Pyromancy Tome." },
-                            { id: "p_26", name: "Rapport", desc: "Kup u Karli po przekazaniu Quelana Pyromancy Tome." },
-                            { id: "p_27", name: "Sacred Flame", desc: "Smouldering Lake: W głębokiej lawie pod ruinami." }
+                            { id: "p_1", name: "Fireball", desc: "Zakup: Cornyx z Great Swamp." },
+                            { id: "p_2", name: "Fire Orb", desc: "Zakup: Cornyx (Wymaga: Great Swamp Pyromancy Tome)." },
+                            { id: "p_3", name: "Bursting Fireball", desc: "Zakup: Cornyx (Wymaga: Great Swamp Pyromancy Tome)." },
+                            { id: "p_4", name: "Great Chaos Fire Orb", desc: "Zakup: Cornyx (Wymaga: Izalith Pyromancy Tome)." },
+                            { id: "p_6", name: "Fire Surge", desc: "Zakup: Cornyx." },
+                            { id: "p_7", name: "Fire Whip", desc: "Zakup: Cornyx (Wymaga: Quelana Pyromancy Tome)." },
+                            { id: "p_8", name: "Fire Storm", desc: "Zakup: Karla (Wymaga: Quelana Pyromancy Tome)." },
+                            { id: "p_9", name: "Chaos Storm", desc: "Zakup: Karla (Wymaga: Izalith Pyromancy Tome)." },
+                            { id: "p_10", name: "Combustion", desc: "Zakup: Cornyx." },
+                            { id: "p_11", name: "Great Combustion", desc: "Zakup: Cornyx (Wymaga: Great Swamp Pyromancy Tome)." },
+                            { id: "p_12", name: "Fire Arc", desc: "Zakup: Cornyx." },
+                            { id: "p_14", name: "Flash Sweat", desc: "Zakup: Cornyx." },
+                            { id: "p_15", name: "Profuse Sweat", desc: "Zakup: Cornyx (Wymaga: Great Swamp Pyromancy Tome)." },
+                            { id: "p_18", name: "Carthus Beacon", desc: "Zakup: Cornyx (Wymaga: Carthus Pyromancy Tome)." },
+                            { id: "p_19", name: "Carthus Flame Arc", desc: "Zakup: Cornyx (Wymaga: Carthus Pyromancy Tome)." },
+                            { id: "p_21", name: "Poison Mist", desc: "Zakup: Cornyx (Wymaga: Great Swamp Pyromancy Tome)." },
+                            { id: "p_23", name: "Acid Surge", desc: "Zakup: Cornyx (Wymaga: Carthus Pyromancy Tome)." },
+                            { id: "p_24", name: "Black Flame", desc: "Zakup: Karla (Wymaga: Grave Warden Pyromancy Tome)." },
+                            { id: "p_25", name: "Black Fire Orb", desc: "Zakup: Karla (Wymaga: Grave Warden Pyromancy Tome)." },
+                            { id: "p_26", name: "Rapport", desc: "Zakup: Karla (Wymaga: Quelana Pyromancy Tome)." }
+                        ]
+                    },
+                    {
+                        name: "Znajdźki w Świecie Gry",
+                        items: [
+                            { id: "p_16", name: "Iron Flesh", desc: "Loot: Farron Keep – w trującym bagnie przy ciele." },
+                            { id: "p_17", name: "Power Within", desc: "Loot: Grand Archives – za ukrytą dźwignią na dół w bibliotece." },
+                            { id: "p_22", name: "Toxic Mist", desc: "Loot: Smouldering Lake – w głębokiej lawie pod ruinami." },
+                            { id: "p_27", name: "Sacred Flame", desc: "Loot: Smouldering Lake – na dnie zbiornika z lawą w ruinach." }
+                        ]
+                    },
+                    {
+                        name: "Nagrody za Przymierza (Covenants)",
+                        items: [
+                            { id: "p_20", name: "Warmth", desc: "Nagroda: Ranga 2 w Mound-Makers (Wymagane: 30 Vertebra Shackles)." }
+                        ]
+                    },
+                    {
+                        name: "Transmutacja Dusz Bossów (Ludleth)",
+                        items: [
+                            { id: "p_5", name: "Chaos Bed Vestiges", desc: "Transmutacja: Soul of Old Demon King u Ludletha." },
+                            { id: "p_13", name: "Boulder Heave", desc: "Transmutacja: Soul of Stray Demon u Ludletha." }
                         ]
                     }
                 ]
@@ -278,90 +363,100 @@ class ChecklistData {
                 title: "Pierścienie (107)",
                 groups: [
                     {
-                        name: "Pierścienie Bazowe (NG) - Część 1",
+                        name: "Zakup u Handlarzy",
                         items: [
-                            { id: "r_1", name: "Life Ring", desc: "Klasa startowa lub zakup u Shrine Handmaiden." },
-                            { id: "r_2", name: "Sun Princess Ring", desc: "Anor Londo: W komnacie Gwynevere po walce z Aldrichem." },
-                            { id: "r_3", name: "Estus Ring", desc: "Firelink Shrine: Na dnie wieży (wymaga Tower Key)." },
-                            { id: "r_4", name: "Ashen Estus Ring", desc: "Untended Graves: Przy ciele na samym początku lokacji." },
-                            { id: "r_5", name: "Chloranthy Ring", desc: "Undead Settlement: Wieża przy demonie Siegwarda." },
-                            { id: "r_6", name: "Havel's Ring", desc: "Transmutacja Duszy Stray Demona u Ludletha." },
-                            { id: "r_7", name: "Ring of Favor", desc: "Irithyll: Po pokonaniu dwóch Sulyvahn's Beasts za iluzoryczną ścianą." },
-                            { id: "r_8", name: "Prisoner's Chain", desc: "Transmutacja Duszy Championa Gundyra u Ludletha." },
-                            { id: "r_9", name: "Ring of Steel Protection", desc: "Archdragon Peak: Przy wejściu do ruin." },
-                            { id: "r_10", name: "Magic Stoneplate Ring", desc: "Consumed King's Garden: Przy ciele rycerza." },
-                            { id: "r_11", name: "Flame Stoneplate Ring", desc: "Undead Settlement: Wiszące ciało na klatce." },
-                            { id: "r_12", name: "Thunder Stoneplate Ring", desc: "Archdragon Peak: Przy ruinach na szczycie." },
-                            { id: "r_13", name: "Dark Stoneplate Ring", desc: "Cathedral of the Deep: Przy ciele na balkonie." },
-                            { id: "r_14", name: "Speckled Stoneplate Ring", desc: "Smouldering Lake: Za zniszczalną ścianą pod wyłaniającym się robakiem." },
-                            { id: "r_15", name: "Bloodbite Ring", desc: "Undead Settlement: Upuszczany przez Szczura w kanałach." },
-                            { id: "r_16", name: "Poisonbite Ring", desc: "Cathedral of the Deep: Przy ciele w bagnie za ogrem." },
-                            { id: "r_17", name: "Cursebite Ring", desc: "Profaned Capital: W bagnie z toksynami." },
-                            { id: "r_18", name: "Fleshbite Ring", desc: "Grand Archives: Na dachu za drewnianymi skrzyniami." },
-                            { id: "r_19", name: "Knight's Ring", desc: "Lothric Castle: Przed wejściem do kaplicy Rycerzy." },
-                            { id: "r_20", name: "Hunter's Ring", desc: "Grand Archives: Na szczycie wieży z trzema rycerzami." },
-                            { id: "r_21", name: "Scholar Ring", desc: "Grand Archives: Przy dźwigni w bibliotece." },
-                            { id: "r_22", name: "Priestess Ring", desc: "Kup u Shrine Handmaiden w Untended Graves." },
-                            { id: "r_23", name: "Covetous Gold Serpent Ring", desc: "Profaned Capital: W celi Siegwarda." },
-                            { id: "r_24", name: "Covetous Silver Serpent Ring", desc: "Firelink Shrine: Ukryty skarb na dachu za iluzoryczną ścianą." },
-                            { id: "r_25", name: "Saint's Ring", desc: "Kup u Iriny z Carim." },
-                            { id: "r_26", name: "Deep Ring", desc: "Cathedral of the Deep: Droga do Rosarii od diakona." },
-                            { id: "r_27", name: "Darkmoon Ring", desc: "Nagroda za 1. rangę w przymierzu Blades of the Darkmoon (10 Proof of a Concord Kept)." },
-                            { id: "r_28", name: "Young Dragon Ring", desc: "Klasa startowa Sorcerer lub dar od Orbecka po zakupie 3 czarów." },
-                            { id: "r_29", name: "Bellowing Dragoncrest Ring", desc: "Irithyll Dungeon: Za zamkniętą kratą w dolnej hali z strażnikami." },
-                            { id: "r_30", name: "Great Swamp Ring", desc: "Road of Sacrifices: W wodzie przy wielkim krabie." }
+                            { id: "r_1", name: "Life Ring", desc: "Zakup: Shrine Handmaiden (za 1,500 dusz) lub Dary Startowe." },
+                            { id: "r_22", name: "Priestess Ring", desc: "Zakup: Shrine Handmaiden w Untended Graves." },
+                            { id: "r_25", name: "Saint's Ring", desc: "Zakup: Irina z Carim." },
+                            { id: "r_45", name: "Horsehoof Ring", desc: "Zakup: Unbreakable Patches w Firelink Shrine." },
+                            { id: "r_46", name: "Wood Grain Ring", desc: "Zakup: Shrine Handmaiden (Po przekazaniu Easterner's Ashes)." },
+                            { id: "r_55", name: "Lloyd's Shield Ring", desc: "Zakup: Shrine Handmaiden (Po przekazaniu Paladin's Ashes)." },
+                            { id: "r_65", name: "Untrue White Ring", desc: "Zakup: Yuria z Londor." },
+                            { id: "r_66", name: "Untrue Dark Ring", desc: "Zakup: Yuria z Londor." },
+                            { id: "r_70", name: "Ring of Sacrifice", desc: "Zakup: Yuria z Londor / Patches / Shrine Handmaiden." }
                         ]
                     },
                     {
-                        name: "Pierścienie Bazowe (NG) - Część 2",
+                        name: "Znajdźki w Świecie Gry / Questy (NG)",
                         items: [
-                            { id: "r_31", name: "Witch's Ring", desc: "Catacombs of Carthus: Przy ciele pod koniec katakumb." },
-                            { id: "r_32", name: "Morne's Ring", desc: "Road of Sacrifices: Pod mostem z psem." },
-                            { id: "r_33", name: "Ring of the Sun's First Born", desc: "Irithyll: Przed wejściem do Anor Londo na ambonie." },
-                            { id: "r_34", name: "Lingering Dragoncrest Ring", desc: "Farron Keep: Zabij gigantycznego kraba na bagnie." },
-                            { id: "r_35", name: "Sage Ring", desc: "Road of Sacrifices: W zalanej budowli." },
-                            { id: "r_36", name: "Dusk Crown Ring", desc: "Irithyll Dungeon: Skrzynia w celi ze strażnikami." },
-                            { id: "r_37", name: "Leo Ring", desc: "Irithyll: W skrzyni na piętrze nad kominkiem Siegwarda." },
-                            { id: "r_38", name: "Wolf Ring", desc: "Nagroda za 2. rangę w przymierzu Watchdogs of Farron (30 Wolf's Blood Swordgrass)." },
-                            { id: "r_39", name: "Hawk Ring", desc: "Upuszczany przez Olbrzyma strzelającego z łuku w Undead Settlement." },
-                            { id: "r_40", name: "Hornet Ring", desc: "Untended Graves: Przy grobie przed ruinami." },
-                            { id: "r_41", name: "Knight Slayer's Ring", desc: "Catacombs of Carthus: Zabij najeźdźcę Knight Slayer Tsoriga." },
-                            { id: "r_42", name: "Ring of Evil Eye", desc: "Dostajesz od Anri w trakcie jej questa w Irithyll." },
-                            { id: "r_43", name: "Farron Ring", desc: "Dostajesz od Hawkwooda w Firelink Shrine po pokonaniu Abyss Watchers." },
-                            { id: "r_44", name: "Dragonscale Ring", desc: "Consumed King's Garden: W skrzyni na skrócie." },
-                            { id: "r_45", name: "Horsehoof Ring", desc: "Kup u Patchesa w Firelink Shrine." },
-                            { id: "r_46", name: "Wood Grain Ring", desc: "Kup u Shrine Handmaiden po przekazaniu Easterner's Ashes." },
-                            { id: "r_47", name: "Flynn's Ring", desc: "Undead Settlement: Na dachu w budowli obok ognistego demona." },
-                            { id: "r_48", name: "Magic Clutch Ring", desc: "Irithyll: Za iluzoryczną ścianą przed kościołem Yorshki." },
-                            { id: "r_49", name: "Lightning Clutch Ring", desc: "Archdragon Peak: Przy drewnianym podeście." },
-                            { id: "r_50", name: "Fire Clutch Ring", desc: "Undead Settlement: Na wiszącej desce przy moście." },
-                            { id: "r_51", name: "Dark Clutch Ring", desc: "Profaned Capital: Przy ciele na moście z magiem." },
-                            { id: "r_52", name: "Red Tearstone Ring", desc: "Lothric Castle: Na balkonie przed Dragonslayer Armour." },
-                            { id: "r_53", name: "Blue Tearstone Ring", desc: "Daje Greirat w Firelink Shrine po odzyskaniu Loretta's Bone." },
-                            { id: "r_54", name: "Lloyd's Sword Ring", desc: "Cathedral of the Deep: Na gzymsie nad pierwszym olbrzymem." },
-                            { id: "r_55", name: "Lloyd's Shield Ring", desc: "Kup u Shrine Handmaiden po przekazaniu Paladin's Ashes." },
-                            { id: "r_56", name: "Carthus Milkring", desc: "Catacombs of Carthus: W komnacie z wazami." },
-                            { id: "r_57", name: "Carthus Bloodring", desc: "Catacombs of Carthus: Przy ciele za kościotrupami." },
-                            { id: "r_58", name: "Pontiff's Right Eye", desc: "Irithyll: Zabij bestię na moście wejściowym." },
-                            { id: "r_59", name: "Pontiff's Left Eye", desc: "Transmutacja Duszy Vordta u Ludletha." },
-                            { id: "r_60", name: "Aldrich's Ruby", desc: "Anor Londo: Zabij wielkiego pająka w katedrze." },
-                            { id: "r_61", name: "Aldrich's Sapphire", desc: "Cathedral of the Deep: Zabij wielkiego pająka w ruinach." },
-                            { id: "r_62", name: "Silvercat Ring", desc: "Dostajesz od Sirris w Firelink Shrine po pomocy na moście." },
-                            { id: "r_63", name: "Slumbering Dragoncrest Ring", desc: "Dostajesz od Orbecka po zakupie czarów typu Spook/Aural Decoy." },
-                            { id: "r_64", name: "Obscuring Ring", desc: "Nagroda za 1. rangę w przymierzu Rosaria's Fingers (10 Pale Tongues)." },
-                            { id: "r_65", name: "Untrue White Ring", desc: "Kup u Yurii z Londor w Firelink Shrine." },
-                            { id: "r_66", name: "Untrue Dark Ring", desc: "Kup u Yurii z Londor w Firelink Shrine." },
-                            { id: "r_67", name: "Reversal Ring", desc: "Anor Londo: W komnacie ślubnej za iluzoryczną ścianą." },
-                            { id: "r_68", name: "Skull Ring", desc: "Upuszczany przez Ludletha z Courland po jego śmierci na tronie." },
-                            { id: "r_69", name: "Calamity Ring", desc: "Archdragon Peak: Użyj gestu Path of the Dragon przed ołtarzem." },
-                            { id: "r_70", name: "Ring of Sacrifice", desc: "Sprzedawany przez Yuria / Patches / Shrine Handmaiden lub znajdowany w świecie." }
+                            { id: "r_2", name: "Sun Princess Ring", desc: "Loot: Anor Londo – w komnacie Gwynevere po walce z Aldrichem." },
+                            { id: "r_3", name: "Estus Ring", desc: "Loot: Firelink Shrine – na dnie wieży (wymaga Tower Key)." },
+                            { id: "r_4", name: "Ashen Estus Ring", desc: "Loot: Untended Graves – przy ciele na samym początku lokacji." },
+                            { id: "r_5", name: "Chloranthy Ring", desc: "Loot: Undead Settlement – w wieży przy ognistym demonie Siegwarda." },
+                            { id: "r_7", name: "Ring of Favor", desc: "Loot: Irithyll – po pokonaniu dwóch Sulyvahn's Beasts za iluzoryczną ścianą." },
+                            { id: "r_9", name: "Ring of Steel Protection", desc: "Loot: Archdragon Peak – przy wejściu do ruin po lewej gzymsie." },
+                            { id: "r_10", name: "Magic Stoneplate Ring", desc: "Loot: Consumed King's Garden – przy ciele rycerza." },
+                            { id: "r_11", name: "Flame Stoneplate Ring", desc: "Loot: Undead Settlement – wiszące ciało na klatce schodowej." },
+                            { id: "r_12", name: "Thunder Stoneplate Ring", desc: "Loot: Archdragon Peak – przy ruinach na szczycie." },
+                            { id: "r_13", name: "Dark Stoneplate Ring", desc: "Loot: Cathedral of the Deep – przy ciele na balkonie." },
+                            { id: "r_14", name: "Speckled Stoneplate Ring", desc: "Loot: Smouldering Lake – za zniszczalną ścianą pod wielkim robakiem." },
+                            { id: "r_15", name: "Bloodbite Ring", desc: "Loot: Undead Settlement – upuszczany przez Szczura w kanałach." },
+                            { id: "r_16", name: "Poisonbite Ring", desc: "Loot: Cathedral of the Deep – przy ciele w bagnie za ogrem." },
+                            { id: "r_17", name: "Cursebite Ring", desc: "Loot: Profaned Capital – w bagnie z toksynami." },
+                            { id: "r_18", name: "Fleshbite Ring", desc: "Loot: Grand Archives – na dachu za drewnianymi skrzyniami." },
+                            { id: "r_19", name: "Knight's Ring", desc: "Loot: Lothric Castle – przed wejściem do kaplicy Rycerzy." },
+                            { id: "r_20", name: "Hunter's Ring", desc: "Loot: Grand Archives – na szczycie wieży z 3 Anielskimi Rycerzami." },
+                            { id: "r_21", name: "Scholar Ring", desc: "Loot: Grand Archives – przy dźwigni na dół w bibliotece." },
+                            { id: "r_23", name: "Covetous Gold Serpent Ring", desc: "Loot: Profaned Capital – w celi Siegwarda." },
+                            { id: "r_24", name: "Covetous Silver Serpent Ring", desc: "Loot: Firelink Shrine – ukryty skarb na dachu za iluzoryczną ścianą." },
+                            { id: "r_26", name: "Deep Ring", desc: "Loot: Cathedral of the Deep – opuszczany przez diakona w wieży." },
+                            { id: "r_28", name: "Young Dragon Ring", desc: "Quest / Klasa: Klasa Sorcerer lub dar od Orbecka po zakupie 3 czarów." },
+                            { id: "r_29", name: "Bellowing Dragoncrest Ring", desc: "Loot: Irithyll Dungeon – za zamkniętą kratą w dolnej hali z strażnikami." },
+                            { id: "r_30", name: "Great Swamp Ring", desc: "Loot: Road of Sacrifices – w wodzie przy wielkim krabie." },
+                            { id: "r_31", name: "Witch's Ring", desc: "Loot: Catacombs of Carthus – przy ciele pod koniec katakumb." },
+                            { id: "r_32", name: "Morne's Ring", desc: "Loot: Road of Sacrifices – pod mostem z psem." },
+                            { id: "r_33", name: "Ring of the Sun's First Born", desc: "Loot: Irithyll – na ambonie przed wejściem do Anor Londo." },
+                            { id: "r_34", name: "Lingering Dragoncrest Ring", desc: "Loot: Farron Keep – zabij gigantycznego kraba na bagnie." },
+                            { id: "r_35", name: "Sage Ring", desc: "Loot: Road of Sacrifices – w zalanej budowli." },
+                            { id: "r_36", name: "Dusk Crown Ring", desc: "Loot: Irithyll Dungeon – skrzynia w celi ze strażnikami." },
+                            { id: "r_37", name: "Leo Ring", desc: "Loot: Irithyll – w skrzyni na piętrze nad kuchnią Siegwarda." },
+                            { id: "r_39", name: "Hawk Ring", desc: "Loot: Undead Settlement – upuszczany przez Olbrzyma na wieży." },
+                            { id: "r_40", name: "Hornet Ring", desc: "Loot: Untended Graves – przy grobie przed ruinami." },
+                            { id: "r_41", name: "Knight Slayer's Ring", desc: "Loot: Catacombs of Carthus – zabij najeźdźcę Knight Slayer Tsoriga." },
+                            { id: "r_42", name: "Ring of Evil Eye", desc: "Quest: Dostajesz od Anri w trakcie jej questa w Irithyll." },
+                            { id: "r_43", name: "Farron Ring", desc: "Quest: Dostajesz od Hawkwooda w Kaplicy po pokonaniu Abyss Watchers." },
+                            { id: "r_44", name: "Dragonscale Ring", desc: "Loot: Consumed King's Garden – w skrzyni na skrócie z windą." },
+                            { id: "r_47", name: "Flynn's Ring", desc: "Loot: Undead Settlement – na dachu obok ognistego demona." },
+                            { id: "r_48", name: "Magic Clutch Ring", desc: "Loot: Irithyll – za iluzoryczną ścianą przed kościołem Yorshki." },
+                            { id: "r_49", name: "Lightning Clutch Ring", desc: "Loot: Archdragon Peak – przy drewnianym podeście." },
+                            { id: "r_50", name: "Fire Clutch Ring", desc: "Loot: Undead Settlement – na wiszącej desce przy moście." },
+                            { id: "r_51", name: "Dark Clutch Ring", desc: "Loot: Profaned Capital – przy ciele na moście z magiem." },
+                            { id: "r_52", name: "Red Tearstone Ring", desc: "Loot: Lothric Castle – na balkonie przed Dragonslayer Armour." },
+                            { id: "r_53", name: "Blue Tearstone Ring", desc: "Quest: Daje Greirat w Kaplicy po odzyskaniu Loretta's Bone." },
+                            { id: "r_54", name: "Lloyd's Sword Ring", desc: "Loot: Cathedral of the Deep – na gzymsie nad pierwszym olbrzymem." },
+                            { id: "r_56", name: "Carthus Milkring", desc: "Loot: Catacombs of Carthus – w komnacie z wazami." },
+                            { id: "r_57", name: "Carthus Bloodring", desc: "Loot: Catacombs of Carthus – przy ciele za kościotrupami." },
+                            { id: "r_58", name: "Pontiff's Right Eye", desc: "Loot: Irithyll – zabij bestię na moście wejściowym." },
+                            { id: "r_60", name: "Aldrich's Ruby", desc: "Loot: Anor Londo – zabij wielkiego pająka w katedrze." },
+                            { id: "r_61", name: "Aldrich's Sapphire", desc: "Loot: Cathedral of the Deep – zabij wielkiego pająka w ruinach." },
+                            { id: "r_62", name: "Silvercat Ring", desc: "Quest: Dostajesz od Sirris w Kaplicy po pomocy na moście." },
+                            { id: "r_63", name: "Slumbering Dragoncrest Ring", desc: "Quest: Dostajesz od Orbecka po zakupie wybranych czarów." },
+                            { id: "r_67", name: "Reversal Ring", desc: "Loot: Anor Londo – w komnacie ślubnej za iluzoryczną ścianą." },
+                            { id: "r_68", name: "Skull Ring", desc: "Loot: Upuszczany przez Ludletha po jego śmierci na tronie." },
+                            { id: "r_69", name: "Calamity Ring", desc: "Loot: Archdragon Peak – użyj gestu Path of the Dragon przed ołtarzem." }
+                        ]
+                    },
+                    {
+                        name: "Nagrody za Przymierza (Covenants)",
+                        items: [
+                            { id: "r_27", name: "Darkmoon Ring", desc: "Nagroda: Ranga 1 w Blades of the Darkmoon (Wymagane: 10 Proof of a Concord Kept)." },
+                            { id: "r_38", name: "Wolf Ring", desc: "Nagroda: Ranga 2 w Watchdogs of Farron (Wymagane: 30 Wolf's Blood Swordgrass)." },
+                            { id: "r_64", name: "Obscuring Ring", desc: "Nagroda: Ranga 1 w Rosaria's Fingers (Wymagane: 10 Pale Tongues)." }
+                        ]
+                    },
+                    {
+                        name: "Transmutacja Dusz Bossów (Ludleth)",
+                        items: [
+                            { id: "r_6", name: "Havel's Ring", desc: "Transmutacja: Soul of Stray Demon u Ludletha." },
+                            { id: "r_8", name: "Prisoner's Chain", desc: "Transmutacja: Soul of Champion Gundyr u Ludletha." },
+                            { id: "r_59", name: "Pontiff's Left Eye", desc: "Transmutacja: Soul of Vordt u Ludletha." }
                         ]
                     },
                     {
                         name: "Pierścienie Ekskluzywne dla NG+ (21)",
                         items: [
                             { id: "rng_1", name: "Life Ring +1", desc: "NG+: Undead Settlement za wieżą przy resztkach gilotyny." },
-                            { id: "rng_2", name: "Chloranthy Ring +1", desc: "NG+: Irithyll za podium z statuą w katedrze." },
+                            { id: "rng_2", name: "Chloranthy Ring +1", desc: "NG+: Irithyll za podium ze statuą w katedrze." },
                             { id: "rng_3", name: "Havel's Ring +1", desc: "NG+: Archdragon Peak przy ruinach." },
                             { id: "rng_4", name: "Ring of Favor +1", desc: "NG+: Pontiff Sulyvahn arena - górne piętro." },
                             { id: "rng_5", name: "Ring of Steel Protection +1", desc: "NG+: Untended Graves za wieżą." },
@@ -375,7 +470,7 @@ class ChecklistData {
                             { id: "rng_13", name: "Fleshbite Ring +1", desc: "NG+: High Wall of Lothric przy dachu." },
                             { id: "rng_14", name: "Covetous Gold Serpent Ring +1", desc: "NG+: Irithyll Dungeon na balkonie." },
                             { id: "rng_15", name: "Covetous Silver Serpent Ring +1", desc: "NG+: Farron Keep przy drabinie do wilka." },
-                            { id: "rng_16", name: "Lingering Dragoncrest Ring +1", desc: "NG+: Road of Sacrifices przy rufie wargi." },
+                            { id: "rng_16", name: "Lingering Dragoncrest Ring +1", desc: "NG+: Road of Sacrifices przy ruinach." },
                             { id: "rng_17", name: "Sage Ring +1", desc: "NG+: Grand Archives na gzymsie." },
                             { id: "rng_18", name: "Wood Grain Ring +1", desc: "NG+: Consumed King's Garden za windą." },
                             { id: "rng_19", name: "Ring of Evil Eye +1", desc: "NG+: Deacons of the Deep arena za ołtarzem." },
@@ -419,7 +514,7 @@ class ChecklistData {
  */
 class StateManager {
     constructor() {
-        this.storageKey = "ds3_checklist_state_full_v2";
+        this.storageKey = "ds3_checklist_state_full_v3";
         this.state = this.loadState();
     }
 
