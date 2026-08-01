@@ -99,6 +99,9 @@ input[type="checkbox"] {
     accent-color: var(--accent-color);
     width: 18px;
     height: 18px;
+    min-width: 18px;      /* Gwarantuje stałą szerokość */
+    min-height: 18px;     /* Gwarantuje stałą wysokość */
+    flex-shrink: 0;       /* Zabrania Flexboxowi ściskania/rozciągania tego elementu */
     cursor: pointer;
     margin-top: 2px;
 }
