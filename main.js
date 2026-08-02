@@ -143,6 +143,44 @@ class ChecklistData {
                     }
                 ]
             },
+            gestures: {
+                title: "Gesty (26)",
+                groups: [
+                    {
+                        name: "Domyślne",
+                        items: [
+                            { id: "g_1", name: "Point Forward / Point Up / Point Down", desc: "Dostępne od początku gry." },
+                            { id: "g_2", name: "Beckon / Call Over / Wave / Welcome", desc: "Dostępne od początku gry." }
+                        ]
+                    },
+                    {
+                        name: "Zadania NPC i Wydarzenia",
+                        items: [
+                            { id: "g_3", name: "Applaud", desc: "Wątek: Leonhard – porozmawiaj z nim w Firelink Shrine po zdobyciu pierwszego Pale Tongue." },
+                            { id: "g_4", name: "Quiet Resolve", desc: "Wątek: Anri z Astory – porozmawiaj w Catacombs of Carthus." },
+                            { id: "g_5", name: "Rejoice", desc: "Wątek: Siegward z Catariny – po pokonaniu ognistego demona w Undead Settlement." },
+                            { id: "g_6", name: "Hurrah!", desc: "Wątek: Blacksmith Andre – porozmawiaj z nim w Firelink Shrine." },
+                            { id: "g_7", name: "Praise the Sun", desc: "Lokacja: Sunlight Altar w Lothric Castle (przed bossem Dragonslayer Armour)." },
+                            { id: "g_8", name: "My Thanks!", desc: "NPC: Knight Slayer Tsorig – po pokonaniu go w Catacombs of Carthus / Smouldering Lake." },
+                            { id: "g_9", name: "Proper Bow", desc: "NPC: Yellowfinger Heysel – przyzwij przy Keep Ruins przed pokonaniem Abyss Watchers (wymaga oddania min. 1 Pale Tongue Rosarii)." },
+                            { id: "g_10", name: "Dignified Bow", desc: "Wątek: Yuria z Londor – porozmawiaj z nią po jej pojawieniu się w Firelink Shrine." },
+                            { id: "g_11", name: "Duel Bow", desc: "NPC: London Pale Shade – przyzwij przy Farron Keep lub Pontiff Sulyvahn (wymaga 5 Dark Sigils)." },
+                            { id: "g_12", name: "Legion Etiquette", desc: "Przymierze: Watchdogs of Farron – Pomódl się do Old Wolf of Farron." },
+                            { id: "g_13", name: "Darkmoon Loyalty", desc: "Wątek: Sirris z Bezchmurnego Królestwa – porozmawiaj w Firelink Shrine po przekazaniu Dreamchaser's Ashes." },
+                            { id: "g_14", name: "By My Sword", desc: "NPC: Gotthard – przyzwij go do walki z Abyss Watchers lub Pontiff Sulyvahn." },
+                            { id: "g_15", name: "Joy", desc: "Wątek: Blacksmith Andre – po przekazaniu dowolnego węgla (Coal)." },
+                            { id: "g_16", name: "Collapse", desc: "Wątek: Hawkwood – porozmawiaj z nim w Firelink Shrine na początku gry." },
+                            { id: "g_17", name: "Pathetic", desc: "Wątek: Hawkwood – porozmawiaj z nim po pokonaniu Abyss Watchers." },
+                            { id: "g_18", name: "Curl", desc: "Wątek: Greirat z Osady Nieboszczyków – po odzyskaniu Loretta's Bone." },
+                            { id: "g_19", name: "Stretch Out", desc: "Lokacja: Profaned Capital – przy zwłokach obok pierwszego ogniska." },
+                            { id: "g_20", name: "Sleep", desc: "Wątek: Siegward – porozmawiaj z nim, gdy zasypia po walce z demonem lub w kuchni w Irithyll." },
+                            { id: "g_21", name: "Rest", desc: "Lokacja: Odpocznij po raz pierwszy przy dowolnym ognisku." },
+                            { id: "g_22", name: "Prayer", desc: "Wątek: Irina z Carim – porozmawiaj po wyciągnięciu jej z celi w Undead Settlement." },
+                            { id: "g_23", name: "Path of the Dragon", desc: "Lokacja: Consumed King's Garden – zwiń ze zwłok po pokonaniu bossa Oceiros." }
+                        ]
+                    }
+                ]
+            },
             merchants: {
                 title: "Popioły i Zwoje Handlarzy",
                 groups: [
