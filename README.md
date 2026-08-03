@@ -15,4 +15,8 @@ Poniższa lista bezpośrednio pokrywa wymagania do zdobycia następujących osi�
 * **Master of Expression** (Naucz się wszystkich gestów - powiązane z questami NPC)
 * **Ultimate Infusion** (Wykonaj wszystkie typy ulepszeń broni - powiązane z węgielkami)
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> fdd6da4716f1d4c1c2e1db0a7c6e279a23de86c8
