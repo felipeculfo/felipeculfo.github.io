@@ -16,3 +16,4 @@ Poniższa lista bezpośrednio pokrywa wymagania do zdobycia następujących osi�
 * **Ultimate Infusion** (Wykonaj wszystkie typy ulepszeń broni - powiązane z węgielkami)
 
 ---
+
