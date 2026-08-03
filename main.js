@@ -239,6 +239,7 @@ class ChecklistData {
                             { id: "s_4", name: "Great Heavy Soul Arrow", desc: "Zakup: Orbeck z Vinheim." },
                             { id: "s_5", name: "Farron Dart", desc: "Zakup: Orbeck z Vinheim." },
                             { id: "s_6", name: "Greater Farron Dart", desc: "Zakup: Orbeck z Vinheim (Wymaga: Sage's Scroll)." },
+                            { id: "s_32", name: "Soul Greatsword", desc: "Zakup: Orbeck z Vinheim / Yuria." },
                             { id: "s_7", name: "Farron Flashsword", desc: "Zakup: Orbeck z Vinheim." },
                             { id: "s_8", name: "Homing Soulmass", desc: "Zakup: Orbeck z Vinheim (Wymaga: Logan's Scroll)." },
                             { id: "s_9", name: "Homing Crystal Soulmass", desc: "Zakup: Orbeck z Vinheim (Wymaga: Crystal Scroll)." },
