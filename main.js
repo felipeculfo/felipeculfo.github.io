@@ -40,7 +40,7 @@ class ChecklistData {
                         ]
                     },
                     {
-                        name: "Anri z Astory – Ścieżka Zła (Lord of Hollows / Ślub)",
+                        name: "Anri z Astory - Ścieżka Zła (Lord of Hollows / Ślub)",
                         items: [
                             { id: "npc_anri_bad_1", name: "Krok 1-4: Standardowe postępowanie", desc: "Wykonaj kroki 1-4 z wątku Anri (Halfway Fortress, Firelink, Katakumby, Horace)." },
                             { id: "npc_anri_bad_2", name: "Krok 5: Church of Yorshka (Ostrzeżenie!)", desc: "Porozmawiaj z Anri w Kościele Yorshki. NIE ZABIJAJ skrytobójcy w rogu! Pozwól mu przeżyć." },
@@ -504,7 +504,7 @@ class ChecklistData {
                             { id: "rng_9", name: "Dark Stoneplate Ring +1", desc: "NG+: Lothric Castle pod mostem z smokami." },
                             { id: "rng_10", name: "Bloodbite Ring +1", desc: "NG+: Smouldering Lake przed krabami." },
                             { id: "rng_11", name: "Poisonbite Ring +1", desc: "NG+: Undead Settlement przy studni w osadzie." },
-                            { id: "rng_12", name: "Cursebite Ring +1", desc: "NG+: Cathedral of the Deep przy dachu." },
+                            // { id: "rng_12", name: "Cursebite Ring +1", desc: "NG+: Cathedral of the Deep przy dachu." },
                             { id: "rng_13", name: "Fleshbite Ring +1", desc: "NG+: High Wall of Lothric przy dachu." },
                             { id: "rng_14", name: "Covetous Gold Serpent Ring +1", desc: "NG+: Irithyll Dungeon na balkonie." },
                             { id: "rng_15", name: "Covetous Silver Serpent Ring +1", desc: "NG+: Farron Keep przy drabinie do wilka." },
@@ -512,8 +512,10 @@ class ChecklistData {
                             { id: "rng_17", name: "Sage Ring +1", desc: "NG+: Grand Archives na gzymsie." },
                             { id: "rng_18", name: "Wood Grain Ring +1", desc: "NG+: Consumed King's Garden za windą." },
                             { id: "rng_19", name: "Ring of Evil Eye +1", desc: "NG+: Deacons of the Deep arena za ołtarzem." },
-                            { id: "rng_20", name: "Magic Clutch Ring +1", desc: "NG+: Irithyll przy ogrodzie." },
-                            { id: "rng_21", name: "Lightning Clutch Ring +1", desc: "NG+: Wyvern arena w Archdragon Peak." }
+                            // { id: "rng_20", name: "Magic Clutch Ring +1", desc: "NG+: Irithyll przy ogrodzie." },
+                            // { id: "rng_21", name: "Lightning Clutch Ring +1", desc: "NG+: Wyvern arena w Archdragon Peak." },
+                            { id: "rng_22", name: "Wolf Ring +1", desc: "NG+: Farron Keep – na zewnątrz budynku przy ognisku Keep Ruins, przy ścianie." },
+                            { id: "rng_23", name: "Speckled Stoneplate Ring +1", desc: "NG+: Cemetery of Ash przy nagrobku obok dużej Krystalicznej Jaszczurki." }
                         ]
                     },
                     {
@@ -534,7 +536,9 @@ class ChecklistData {
                             { id: "rng2_13", name: "Lingering Dragoncrest Ring +2", desc: "NG++: Grand Archives na dachu wieży." },
                             { id: "rng2_14", name: "Sage Ring +2", desc: "NG++: Consumed King's Garden przy halabardniku." },
                             { id: "rng2_15", name: "Wood Grain Ring +2", desc: "NG++: Irithyll of the Boreal Valley za ścianą." },
-                            { id: "rng2_16", name: "Ring of Evil Eye +2", desc: "NG++: High Wall of Lothric w wieży z kluczem." }
+                            { id: "rng2_16", name: "Ring of Evil Eye +2", desc: "NG++: High Wall of Lothric w wieży z kluczem." },
+                            { id: "rng2_17", name: "Wolf Ring +2", desc: "NG++: Cemetery of Ash – na małej polance za drzwiami po pokonaniu Iudex Gundyra." 
+}
                         ]
                     }
                 ]
@@ -544,6 +548,16 @@ class ChecklistData {
 
     getCategories() {
         return this.categories;
+    }
+
+    getCategoryItemCount(categoryKey) {
+        const category = this.categories[categoryKey];
+        if (!category || !category.groups) return 0;
+
+        return category.groups.reduce(
+            (total, group) => total + group.items.length, 
+            0
+        );
     }
 }
 
@@ -604,9 +618,19 @@ class UIRenderer {
         const categories = this.dataManager.getCategories();
 
         Object.keys(categories).forEach(key => {
+            
+            const category = categories[key];
+        
+            // Dynamiczne zliczanie przedmiotów z podgrup
+            const itemCount = this.dataManager.getCategoryItemCount(key);
+        
+            // Oczyszczenie nazwy ze starych cyfr w nawiasie i dodanie aktualnej liczby
+            const cleanTitle = category.title.replace(/\s*\(\d+\)$/, "");
+            const dynamicTitle = `${cleanTitle} (${itemCount})`;
+
             const button = document.createElement("button");
             button.className = `tab-btn ${key === this.activeTab ? 'active' : ''}`;
-            button.textContent = categories[key].title;
+            button.textContent = dynamicTitle;
             button.addEventListener("click", () => this.switchTab(key));
             this.tabContainer.appendChild(button);
         });
