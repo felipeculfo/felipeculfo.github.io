@@ -238,9 +238,10 @@ class ChecklistData {
                             { id: "s_3", name: "Heavy Soul Arrow", desc: "Zakup: Orbeck z Vinheim / Yoel z Londor." },
                             { id: "s_4", name: "Great Heavy Soul Arrow", desc: "Zakup: Orbeck z Vinheim." },
                             { id: "s_5", name: "Farron Dart", desc: "Zakup: Orbeck z Vinheim." },
-                            { id: "s_6", name: "Greater Farron Dart", desc: "Zakup: Orbeck z Vinheim (Wymaga: Sage's Scroll)." },
+                            { id: "s_6", name: "Great Farron Dart", desc: "Zakup: Orbeck z Vinheim (Wymaga: Sage's Scroll)." },
                             { id: "s_32", name: "Soul Greatsword", desc: "Zakup: Orbeck z Vinheim / Yuria." },
                             { id: "s_7", name: "Farron Flashsword", desc: "Zakup: Orbeck z Vinheim." },
+                            { id: "s_24", name: "Farron Hail", desc: "Zakup: Orbeck z Vinheim (Wymaga: Sage's Scroll)." },
                             { id: "s_8", name: "Homing Soulmass", desc: "Zakup: Orbeck z Vinheim (Wymaga: Logan's Scroll)." },
                             { id: "s_9", name: "Homing Crystal Soulmass", desc: "Zakup: Orbeck z Vinheim (Wymaga: Crystal Scroll)." },
                             { id: "s_10", name: "Soul Spear", desc: "Zakup: Orbeck z Vinheim (Wymaga: Logan's Scroll)." },
@@ -257,18 +258,16 @@ class ChecklistData {
                             { id: "s_21", name: "Hidden Body", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
                             { id: "s_22", name: "Cast Light", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
                             { id: "s_23", name: "Repair", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
-                            { id: "s_24", name: "Chameleon", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
                             { id: "s_27", name: "Twisted Wall of Light", desc: "Zakup: Orbeck z Vinheim (Wymaga: Golden Scroll)." },
                             { id: "s_30", name: "Affinity", desc: "Zakup: Karla." },
-                            { id: "s_31", name: "Dark Edge", desc: "Zakup: Karla." }
+                            { id: "s_31", name: "Dark Edge", desc: "Zakup: Karla." },
                         ]
                     },
                     {
                         name: "Znajdźki w Świecie Gry",
                         items: [
                             { id: "s_25", name: "Soul Stream", desc: "Loot: Grand Archives – w ukrytej komnacie za iluzoryczną ścianą na samym końcu." },
-                            { id: "s_26", name: "Great Farron Dart / Flash Sword", desc: "Loot: Road of Sacrifices – przy ciele w zalanej ruinie." },
-                            { id: "s_32", name: "Great Deep Soul / Soul Beacon", desc: "Loot: Profaned Capital – przy ciele na bagnie z toksynami." }
+                            { id: "s_26", name: "Chameleon", desc: "Loot: Drop ze skrytobójcy podczas questline'a Anri z Astory" },
                         ]
                     },
                     {
@@ -281,6 +280,7 @@ class ChecklistData {
                         name: "Transmutacja Dusz Bossów (Ludleth)",
                         items: [
                             { id: "s_28", name: "Deep Soul", desc: "Transmutacja: Soul of the Deacons of the Deep u Ludletha." },
+                            { id: "s_32", name: "Crystal Hail", desc: "Loot: Transmutacja Soul of Crystal Sage u Ludletha." },
                             { id: "s_34", name: "White Dragon Breath", desc: "Transmutacja: Soul of Consumed Oceiros u Ludletha." }
                         ]
                     }
