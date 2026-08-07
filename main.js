@@ -360,9 +360,7 @@ class ChecklistData {
                             { id: "p_7", name: "Fire Whip", desc: "Zakup: Cornyx (Wymaga: Quelana Pyromancy Tome)." },
                             { id: "p_8", name: "Fire Storm", desc: "Zakup: Karla (Wymaga: Quelana Pyromancy Tome)." },
                             { id: "p_9", name: "Chaos Storm", desc: "Zakup: Karla (Wymaga: Izalith Pyromancy Tome)." },
-                            { id: "p_10", name: "Combustion", desc: "Zakup: Cornyx." },
                             { id: "p_11", name: "Great Combustion", desc: "Zakup: Cornyx (Wymaga: Great Swamp Pyromancy Tome)." },
-                            { id: "p_12", name: "Fire Arc", desc: "Zakup: Cornyx." },
                             { id: "p_14", name: "Flash Sweat", desc: "Zakup: Cornyx." },
                             { id: "p_15", name: "Profuse Sweat", desc: "Zakup: Cornyx (Wymaga: Great Swamp Pyromancy Tome)." },
                             { id: "p_18", name: "Carthus Beacon", desc: "Zakup: Cornyx (Wymaga: Carthus Pyromancy Tome)." },
@@ -378,6 +376,7 @@ class ChecklistData {
                         name: "Znajdźki w Świecie Gry",
                         items: [
                             { id: "p_16", name: "Iron Flesh", desc: "Loot: Farron Keep – w trującym bagnie przy ciele." },
+                            { id: "p_10", name: "Profaned Flame", desc: "Loot: Przy stopach giganta w Irythyll Dungeon." },
                             { id: "p_17", name: "Power Within", desc: "Loot: Grand Archives – za ukrytą dźwignią na dół w bibliotece." },
                             { id: "p_22", name: "Toxic Mist", desc: "Loot: Smouldering Lake – w głębokiej lawie pod ruinami." },
                             { id: "p_27", name: "Sacred Flame", desc: "Loot: Smouldering Lake – na dnie zbiornika z lawą w ruinach." }
@@ -393,6 +392,7 @@ class ChecklistData {
                         name: "Transmutacja Dusz Bossów (Ludleth)",
                         items: [
                             { id: "p_5", name: "Chaos Bed Vestiges", desc: "Transmutacja: Soul of Old Demon King u Ludletha." },
+                            { id: "p_12", name: "Black Serpent", desc: "Transmutacja: Dusza wysokiego króla Wolmira. " },
                             { id: "p_13", name: "Boulder Heave", desc: "Transmutacja: Soul of Stray Demon u Ludletha." }
                         ]
                     }
